@@ -119,7 +119,7 @@ function App() {
         </h1>
 
         <div className="space-y-6">
-          <div className="bg-slate-700/50 rounded-2xl p-4 sm:p-6">
+          <div className="bg-slate-700/50 rounded-2xl p-4 sm:p-6 overflow-hidden">
             <label className="block text-sm font-medium text-slate-300 mb-1">
               Ontario, Canada
               <span className="ml-2 text-xs text-slate-400">{ontarioLabel}</span>
@@ -129,7 +129,7 @@ function App() {
               type="time"
               value={ontarioTime}
               onChange={(e) => handleOntarioChange(e.target.value)}
-              className="w-full box-border bg-slate-800 text-white text-xl sm:text-3xl font-mono rounded-xl px-3 sm:px-4 py-3 border border-slate-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+              className="w-full min-w-0 box-border bg-slate-800 text-white text-xl sm:text-3xl font-mono rounded-xl px-3 sm:px-4 py-3 border border-slate-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
             />
           </div>
 
@@ -137,7 +137,7 @@ function App() {
             <div className="text-slate-400 text-sm">⇅</div>
           </div>
 
-          <div className="bg-slate-700/50 rounded-2xl p-4 sm:p-6">
+          <div className="bg-slate-700/50 rounded-2xl p-4 sm:p-6 overflow-hidden">
             <label className="block text-sm font-medium text-slate-300 mb-1">
               Sydney, Australia
               <span className="ml-2 text-xs text-slate-400">{australiaLabel}</span>
@@ -147,7 +147,7 @@ function App() {
               type="time"
               value={australiaTime}
               onChange={(e) => handleAustraliaChange(e.target.value)}
-              className="w-full box-border bg-slate-800 text-white text-xl sm:text-3xl font-mono rounded-xl px-3 sm:px-4 py-3 border border-slate-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+              className="w-full min-w-0 box-border bg-slate-800 text-white text-xl sm:text-3xl font-mono rounded-xl px-3 sm:px-4 py-3 border border-slate-600 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
             />
           </div>
         </div>
