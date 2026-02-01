@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+input[type="time"] {
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 100%;
+}
+
+input[type="time"]::-webkit-date-and-time-value {
+  text-align: left;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+}
